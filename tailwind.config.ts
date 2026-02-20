@@ -9,8 +9,17 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        "vaulto-bg": "var(--vaulto-bg)",
+        "vaulto-fg": "var(--vaulto-fg)",
+        "vaulto-accent": "var(--vaulto-accent)",
+        "vaulto-accent-dim": "var(--vaulto-accent-dim)",
+        "vaulto-muted": "var(--vaulto-muted)",
+        "vaulto-border": "var(--vaulto-border)",
+      },
+      fontFamily: {
+        serif: ["var(--font-serif)", "serif"],
+        sans: ["var(--font-sans)", "system-ui", "sans-serif"],
+        mono: ["var(--font-mono)", "monospace"],
       },
     },
   },
