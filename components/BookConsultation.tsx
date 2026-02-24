@@ -44,7 +44,7 @@ export function BookConsultation() {
     <section
       id="contact"
       ref={ref}
-      className={`fade-in px-4 py-16 sm:px-6 sm:py-24 lg:px-8 ${isInView ? "visible" : ""}`}
+      className={`fade-in px-4 pt-24 pb-16 sm:px-6 sm:pt-32 sm:pb-24 lg:px-8 lg:pt-36 ${isInView ? "visible" : ""}`}
     >
       <Script
         src="https://assets.calendly.com/assets/external/widget.js"
@@ -53,18 +53,19 @@ export function BookConsultation() {
       />
       <div className="mx-auto max-w-4xl">
         <h2 className="font-serif text-3xl font-semibold text-vaulto-fg sm:text-4xl">
-          Schedule a Demo
+          Schedule an Integration Call
         </h2>
-        <p className="mt-3 font-sans text-vaulto-muted">
-          Speak with our team to explore how Vaulto&apos;s platform fits your
-          institutional workflow.
-        </p>
+        <ul className="mt-3 list-disc list-inside space-y-1 font-sans text-vaulto-muted">
+          <li>Map Vaulto&apos;s platform into your existing institutional workflows</li>
+          <li>See key features in action</li>
+          <li>Talk through pricing, deployment, and integration timelines</li>
+        </ul>
 
-        <div className="mt-10 overflow-hidden rounded-xl border border-vaulto-border bg-[var(--vaulto-card)] p-0">
+        <div className="mt-10 overflow-hidden rounded-xl border border-vaulto-border bg-[var(--vaulto-card)] p-0 max-w-2xl mx-auto">
           <div
             ref={calendlyRef}
-            className="calendly-widget-root w-full min-h-[630px] overflow-hidden"
-            aria-label="Book a consultation with Vaulto"
+            className="calendly-widget-root w-full min-h-[500px] overflow-hidden"
+            aria-label="Book an integration and demo call with Vaulto"
           />
         </div>
       </div>

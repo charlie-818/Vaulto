@@ -21,7 +21,9 @@ export function Hero() {
           <br />
           managing, and maintaining equity ownership records
           <br />
-          and capitalization tables on blockchain.
+          and capitalization tables on blockchain, with an integration-focused
+          demo to map these capabilities into your existing workflows and discuss
+          pricing in detail.
         </p>
         <div className="mt-6">
           <Link
